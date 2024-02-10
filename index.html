@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>zc试卷评测系统|首页</title>
+    <meta name="description" content="zc试卷评测系统 首页">
+    <meta name="keywords" content="zc,试卷评测">
+    <link rel="shortcut icon" href="logo.ico">
+    <style>
+      a:link {
+        color: #4c9ada;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #4c9ada;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #235ab2;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:active {
+        color: #235ab2;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #3DA0DA;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #FFFFFF;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      h1{
+        background-color:none;
+      }
+      h2{
+        background-color:none;
+      }
+      h3{
+        background-color:none;
+      }
+      h4{
+        background-color:none;
+      }
+      h5{
+        background-color:none;
+      }
+      p{
+        background-color:none;
+      }
+      h1{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-right:0px;
+        margin-left:130px;
+      }
+	  table{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-right:0px;
+        margin-left:130px;
+      }
+      h2{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-right:0px;
+        margin-left:130px;
+      }
+      h3{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-right:0px;
+        margin-left:130px;
+      }
+      h4{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-right:0px;
+        margin-left:130px;
+      }
+      h5{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-right:0px;
+        margin-left:130px;
+      }
+      p{
+        margin-top:0px;
+        margin-bottom:0px;
+        margin-right:0px;
+        margin-left:130px;
+      }
+	  ul {
+		  
+	      list-style-type: none;
+	      margin: 0;
+	      padding: 0;
+	      width: 100px;
+	      background-color: #f1f1f1;
+	  }
+	   
+	  li a {
+	      display: block;
+	      color: #000;
+	      padding: 20px 16px;
+	      text-decoration: none;
+	  }
+	   
+	  /* 鼠标移动到选项上修改背景颜色 */
+	  li a:hover {
+	      background-color: #555;
+	      color: white;
+	  }
+	  *{margin: 0;padding: 0;}
+	       .nav{
+			height: 50px;
+	        width: 100%;
+	        position: fixed;
+	        top: 0;
+			white-space:nowrap;
+			background-color: rgb(163,200,239);
+	       }
+		   .nav1{
+			height: 100%;
+	        width: 100px;
+	        position: fixed;
+	        top: 50px;
+			white-space:nowrap;
+			background-color: #f1f1f1;
+	       }
+    </style>
+  </head>
+  <body bgcolor="#FFFFFF">
+	  
+	<div class="nav">
+		<h2 class="margin">首页 | 网页总访问量：<img src="https://badges.toozhao.com/badges/01HP4KVJ6TA7CEZZR2WPHJFMYR/blue.svg" /></h2>
+	</div>
+	<div class="nav1">
+		
+    <ul>
+		<li><a href="index.html">首页</a></li>
+		<li><a href="introduce.html">使用说明</a></li>
+		<li><a href="download.html">下载</a></li>
+	</div>
+    </ul>
+	</br>
+	</br>
+	</br>
+	</br>
+	<script>
+	        Date.prototype.format = function (fmt) {
+	            var o = {
+	                "y+": this.getFullYear,
+	                "M+": this.getMonth() + 1,
+	                "d+": this.getDate(),
+	                "h+": this.getHours(),
+	                "m+": this.getMinutes(),
+	                "s+": this.getSeconds()
+	            };
+	            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+	            for (var k in o)
+	                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+	            return fmt;
+	        }
+	        setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+	    </script>
+	<h3 id="你好，世界！">你好，世界！</h3>
+	<table border="1">
+	<tr>
+	  <td>现在是：<div id="dateTime"></div></td>
+	</tr>
+	</table>
+	<p>这里是 zc试卷评测系统 官网首页</p>
+	</br>
+	<p>您可以在这里找到有关于 zc试卷评测系统 的一切</p>
+	</br>
+	<p>网站说明：</p>
+	</br>
+	<p>您可以在“使用说明”中查看软件的使用方法，也可以在“下载”中下载软件安装包以及其他辅助文件</p>
+	</br>
+	<p><b>注意：zc是一个软件，不是两个软件，软件分为学生端和教师端</b></p>
+  </body>
+</html>
